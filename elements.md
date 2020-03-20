@@ -28,8 +28,7 @@ nav-menu: true
 <!-- Break -->
 
 <h3>What about the women?</h3>
-		<p><a href="https://www.bbc.com/news/entertainment-arts-47232677">According to the BBC</a>, The gender gap in the music industry is actually widening. Reflecting on music made by women can be an important step to narrow the gap.</p>
-		<p>For this study, I looked at lyrics by 239 musical acts, which include: female solo artists, girls bands and bands led by women. Edits, remixes, live versions were not taken into account.</p>
+		<p><a href="https://www.bbc.com/news/entertainment-arts-47232677">According to the BBC</a>, The gender gap in the music industry is actually widening. Reflecting on music made by women can be an important step to narrow the gap. For this study, I looked at lyrics by 239 musical acts, which include: mostly female solo artists, some girls bands and a few bands led by women. Edits, remixes, live versions were not taken into account. 30993 songs were analyzed via NLP. </p>
 		<p>All the data was gathered via Genius's API in March 2020.</p>
 
 <h4>The word count distribuition</h4>
