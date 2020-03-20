@@ -26,24 +26,23 @@ nav-menu: true
 <hr class="major" />
 
 <!-- Break -->
-<div class="4u 12u$(medium)">
-		<h3>What about the women?</h3>
+
+<h3>What about the women?</h3>
 		<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
 		<div class="flourish-embed flourish-scatter" data-src="visualisation/1627528"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-	</div>
-	<div class="4u$ 12u$(medium)">
-		<h3>Accumsan montes viverra</h3>
+
+
+<h3>Accumsan montes viverra</h3>
 		<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
 		<div class="flourish-embed flourish-scatter" data-src="visualisation/1627297"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-	</div>
+
 </div>
 
 <hr class="major" />
 
 <!-- Elements -->
-<h2 id="elements">Elements</h2>
+<h2 id="elements">So, what are women singing about?</h2>
 <div class="row 200%">
-	<div class="6u 12u$(medium)">
 
 
 <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.css">
@@ -90,6 +89,5 @@ if(typeof(LDAvis) !== "undefined"){
 
 
 </div>
-</section>
 
 </div>
