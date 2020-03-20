@@ -28,13 +28,18 @@ nav-menu: true
 <!-- Break -->
 
 <h3>What about the women?</h3>
-		<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-		<div class="flourish-embed flourish-scatter" data-src="visualisation/1627528"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+		<p><a href="https://www.bbc.com/news/entertainment-arts-47232677">According to the BBC</a>, The gender gap in the music industry is actually widening. Reflecting on music made by women can be an important step to narrow the gap.</p>
+		<p>For this study, I looked at lyrics by 239 musical acts, which include: female solo artists, girls bands and bands led by women. Edits, remixes, live versions were not taken into account.</p>
+		<p>All the data was gathered via Genius's API in March 2020.</p>
+
+<h4>The word count distribuition</h4>
+	
+<div class="flourish-embed flourish-scatter" data-src="visualisation/1627528"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
 
-<h3>Accumsan montes viverra</h3>
-		<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-		<div class="flourish-embed flourish-scatter" data-src="visualisation/1627297"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+<h4>The widest dictonary</h4>
+
+<div class="flourish-embed flourish-scatter" data-src="visualisation/1627297"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
 
 <hr class="major" />
@@ -42,7 +47,7 @@ nav-menu: true
 <!-- Elements -->
 <h2 id="elements">So, what are women singing about?</h2>
 
-
+<p>The LDA model used has an average coherence score of 45-48%. During the tests, the lowest score was 43% and the highest was 54%. The chart reflects the latter.</p>
 
 <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.css">
 
@@ -85,7 +90,16 @@ if(typeof(LDAvis) !== "undefined"){
 }
 </script>
 
+<hr class="major" />
 
+<!-- Elements -->
+<h2 id="elements">Future Steps</h2>
+
+<ul>
+			<li>Manual verification of data</li>
+			<li>Further categorization: music genres, nationalities, etc.</li>
+			<li>Improving the model</li>
+		</ul>
 
 </div>
 
