@@ -45,9 +45,7 @@ nav-menu: true
 <div class="row 200%">
 	<div class="6u 12u$(medium)">
 
-<!-- Text stuff -->
-<h3>Text</h3>
-<p>
+
 <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.css">
 
 
@@ -87,7 +85,15 @@ if(typeof(LDAvis) !== "undefined"){
             })
          });
 }
-</script></p>
+</script>
+
+
+<!-- Text stuff -->
+<h3>Text</h3>
+<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>.
+Finally, this is a <a href="#">link</a>.</p>
 <hr />
 <h2>Heading Level 2</h2>
 <h3>Heading Level 3</h3>
