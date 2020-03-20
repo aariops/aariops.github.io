@@ -18,9 +18,9 @@ nav-menu: true
 <h2 id="content">Music is inspiring, and so is data</h2>
 <p>Some major inspiration for this work came from the following articles:</p>
 		<ul>
-			<li>**Brandon Punturo**, who used natural language processing to [analyse Drake's lyrics](https://towardsdatascience.com/drake-using-natural-language-processing-to-understand-his-lyrics-49e54ace3662)</li>
-			<li>Sagittis lorem eleifend.</li>
-			<li>Felis dolore viverra.</li>
+			<li>The Pudding's feature <a href="https://pudding.cool/projects/vocabulary/">"The Largest Vocabulary In Hip-Hop"</a> - an exploration of the lyrical richness of a wide variety of rappers</li>
+			<li>Another Pudding's article: <a href="https://pudding.cool/2017/09/hip-hop-words/">"The Words That Are Most Hip-Hop"</a> - a deep dive into the language of the genre (also by rapper)</li>
+			<li><a href="https://towardsdatascience.com/drake-using-natural-language-processing-to-understand-his-lyrics-49e54ace3662">This one by Brandon Punturo</a>, who used natural language processing to understand Drake's lyrics</li>
 		</ul>
 <div class="row">
 	<div class="6u 12u$(small)">
