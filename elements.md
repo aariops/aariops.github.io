@@ -27,20 +27,22 @@ nav-menu: true
 
 <!-- Break -->
 <h2 id="content">What about the women?</h2>
-		<p><a href="https://www.bbc.com/news/entertainment-arts-47232677">According to the BBC</a>, the gender gap in the music industry is actually widening. Reflecting on music made by women can be an important step to narrow the gap. For this study, I looked at lyrics by 239 musical acts, which include: mostly female solo artists, some girls bands and a few bands led by women. Edits, remixes, live versions were not taken into account. 30993 songs were analyzed with natural language processing. </p>
-		<p>All the data was gathered via Genius's API in March 2020.</p>
+		<p><a href="https://www.bbc.com/news/entertainment-arts-47232677">According to the BBC</a>, the gender gap in the music industry is actually widening. Reflecting on music made by women can be an important step to narrow the gap. </p>
+
+<h3>Getting the data and cleaning the data</h3>
+    <p>For this project, I looked at lyrics by 236 female or female-led musical acts. The list mostly female solo artists, some girls bands and a few bands led by women.</p>
+    <p>I used <a href="https://docs.genius.com/">Genius's API</a> and <a href="https://github.com/johnwmillr/LyricsGenius">LyricsGenius Python client</a> to gather the lyrics. In an effort to reduce duplicates, I excluded edits, remixes, demos, bootlegs and live versions filtering them out of the data retrieved through the API. Since some of the songs were not properly tagged, I tried to minimize repeated lyrics with some manual labour (using string operations). However, some sneaky ones might still be in the full data set.</p>
+    <p>My initial list of artists included Céline Dion, Gloria Estefan and Shakira. After a few trials, I decided it was better to remove them, because the model was identifying French and Spanish lyrics as separate topics. This was good in the sense that was a proof that the model was recognizing text patterns, but bad for my goal. Since language tags were not available, there was no easy way to drop non-English lyrics and so I decided to leave their records out of the sample. In an effort to avoid having many songs in a language other than English, I also dropped three Spanish-sung albums: "Como Ama Una Mujer" and "Por Primera Vez" by Jennifer Lopez, and "Mi Reflejo" by Christina Aguilera.</p>
+    <p>Finally, I got rid of outliers. I dropped the 2% lyrics with the smallest word count as these were mostly interludes, and the 1% with the largest word count, as they were actually not songs (book excerpts, press conferences and even Beyoncé's <a herf="https://genius.com/Beyonce-lemonade-film-script-annotated">"Lemonade" film script</a>). In the end, 30099 songs were analyzed with natural language processing. </p>
 
 <h3>Do I talk much?</h3>
 
-<p>The furthest right on the plot, the more words an artist uses on average per song. English spoken word performer Kate Tempest leads the way, but the podium is only complete with two rappers: Megan Thee Stalion and Little Simz. Rap and spoken word are genres anchored on the power of words and lyricism, so it comes as no surprise that most of the top positions in this category are taken by rappers: Missy Elliott, Ciara and Iggy Azalea are all on the top 10.</p>
+<p><b>The furthest right on the plot, the more words an artist uses on average per song.</b> English spoken word performer Kate Tempest leads the way, but the podium is only complete with two rappers: Megan Thee Stalion and Little Simz. Rap and spoken word are genres anchored on the power of words and lyricism, so it comes as no surprise that most of the top positions in this category are taken by rappers: Missy Elliott, Ciara and Iggy Azalea are all on the top 10.</p>
 <p>Around the 2000 words per song mark, we also find multiple girls bands: Spice Girls (2033.73), Destiny's Child (2028.39) and The Pussycat Dolls (2002.25). The fact that their songs had to display the vocal talents of their various members <i>(even if Beyoncé and Nicole Scherzinger had more proeminent features)</i> might be an explanation for this.</p>
-<p>On the bottom end, we find indie, rock, jazz and electronic acts. Pianists like Diana Krall, Dinah Washington and Norah Jones; indie rock sensations such as Anna Calvi, Cat Power and Sharon Van Etten; electronic legends like Björk, Goldfrapp and Portishead all fall below 800 words per song. Jazz pioneer Billie Holiday is the one with the shortest lyrics - probably due to the fact that her career was before the record industry boom of the 60s.</p>
-<p>Does this mean that pop artists have longer lyrics? Not quite. With their catchy choruses, pop songs rely heavily on repetition, which means that the word count can be skewed in that way. </p>
+<p>On the bottom end, we find indie, rock, jazz and electronic acts. Pianists like Diana Krall, Dinah Washington and Norah Jones; indie rock sensations such as Anna Calvi, Cat Power and Sharon Van Etten; electronic legends like Björk, Goldfrapp and Portishead all fall below 800 words per song. Jazz pioneer Billie Holiday is the one with the shortest lyrics - probably due to the fact that her career happened before the record industry boom of the 60s.</p>
+<p><b>Does this mean that pop artists have longer lyrics?</b> Not quite. With their catchy choruses, pop songs rely heavily on repetition, which means that the word count can be skewed in that way. </p>
 	
 <div class="flourish-embed flourish-scatter" data-src="visualisation/1627528"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-
-
-
 
 <h4>The widest dictonary</h4>
 
