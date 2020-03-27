@@ -30,19 +30,51 @@ nav-menu: true
 		<p><a href="https://www.bbc.com/news/entertainment-arts-47232677">According to the BBC</a>, the gender gap in the music industry is actually widening. Reflecting on music made by women can be an important step to narrow the gap. </p>
 
 <h3>Getting the data and cleaning the data</h3>
-    <p>For this project, I looked at lyrics by 236 female or female-led musical acts. The list mostly female solo artists, some girls bands and a few bands led by women.</p>
+    <p>For this project, I looked at lyrics by 236 female-only and female-led musical acts. The list encompasses mostly solo artists, some girls bands and a few bands whose lead singers are women.</p>
     <p>I used <a href="https://docs.genius.com/">Genius's API</a> and <a href="https://github.com/johnwmillr/LyricsGenius">LyricsGenius Python client</a> to gather the lyrics. In an effort to reduce duplicates, I excluded edits, remixes, demos, bootlegs and live versions filtering them out of the data retrieved through the API. Since some of the songs were not properly tagged, I tried to minimize repeated lyrics with some manual labour (using string operations). However, some sneaky ones might still be in the full data set.</p>
-    <p>My initial list of artists included Céline Dion, Gloria Estefan and Shakira. After a few trials, I decided it was better to remove them, because the model was identifying French and Spanish lyrics as separate topics. This was good in the sense that was a proof that the model was recognizing text patterns, but bad for my goal. Since language tags were not available, there was no easy way to drop non-English lyrics and so I decided to leave their records out of the sample. In an effort to avoid having many songs in a language other than English, I also dropped three Spanish-sung albums: "Como Ama Una Mujer" and "Por Primera Vez" by Jennifer Lopez, and "Mi Reflejo" by Christina Aguilera.</p>
-    <p>Finally, I got rid of outliers. I dropped the 2% lyrics with the smallest word count as these were mostly interludes, and the 1% with the largest word count, as they were actually not songs (book excerpts, press conferences and even Beyoncé's <a herf="https://genius.com/Beyonce-lemonade-film-script-annotated">"Lemonade" film script</a>). In the end, 30099 songs were analyzed with natural language processing. </p>
+    <p>My initial list of artists included Céline Dion, Gloria Estefan and Shakira. After a few trials, I decided it was better to remove them, because the model was identifying French and Spanish lyrics as separate topics. This was good in the sense that was a proof that the model was recognizing text patterns, but bad for my goal. Since language tags were not available, there was no easy way to drop non-English lyrics and so I decided to leave their records out of the sample. In an effort to avoid having many songs in a language other than English, I also dropped three Spanish-sung albums: "Como Ama Una Mujer" and "Por Primera Vez" by Jennifer Lopez, and "Mi Reflejo" by Christina Aguilera. I also added some Spanish words that kept popping up as frequent terms to the stop-words list. </p>
+    <p>Finally, I got rid of outliers. I dropped the 2% lyrics with the smallest word count as these were mostly interludes, and the 1% with the largest word count, as those were actually not songs (book excerpts, press conferences and even Beyoncé's <a herf="https://genius.com/Beyonce-lemonade-film-script-annotated">"Lemonade" film script</a>). In the end, 29772 songs were analyzed with natural language processing. </p>
 
-<h3>Do I talk much?</h3>
+
+<h3>How many words does a song have?</h3>
 
 <p><b>The furthest right on the plot, the more words an artist uses on average per song.</b> English spoken word performer Kate Tempest leads the way, but the podium is only complete with two rappers: Megan Thee Stalion and Little Simz. Rap and spoken word are genres anchored on the power of words and lyricism, so it comes as no surprise that most of the top positions in this category are taken by rappers: Missy Elliott, Ciara and Iggy Azalea are all on the top 10.</p>
-<p>Around the 2000 words per song mark, we also find multiple girls bands: Spice Girls (2033.73), Destiny's Child (2028.39) and The Pussycat Dolls (2002.25). The fact that their songs had to display the vocal talents of their various members <i>(even if Beyoncé and Nicole Scherzinger had more proeminent features)</i> might be an explanation for this.</p>
-<p>On the bottom end, we find indie, rock, jazz and electronic acts. Pianists like Diana Krall, Dinah Washington and Norah Jones; indie rock sensations such as Anna Calvi, Cat Power and Sharon Van Etten; electronic legends like Björk, Goldfrapp and Portishead all fall below 800 words per song. Jazz pioneer Billie Holiday is the one with the shortest lyrics - probably due to the fact that her career happened before the record industry boom of the 60s.</p>
+<p>Around the 2000 words per song mark, we also find multiple girls bands: Spice Girls, Destiny's Child and The Pussycat Dolls. The fact that their songs had to display the vocal talents of their various members <i>(even if Beyoncé and Nicole Scherzinger had more proeminent features)</i> might be an explanation for this.</p>
+<p>On the bottom end we find some indie, rock, jazz and electronic acts. Pianists like Diana Krall, Dinah Washington and Norah Jones; indie rock sensations such as Anna Calvi, Cat Power and Sharon Van Etten; electronic legends like Björk, Goldfrapp and Portishead all fall below 800 words per song. Jazz pioneer Billie Holiday is the one with the shortest lyrics - probably due to the fact that her career happened before the record industry boom of the 60s.</p>
 <p><b>Does this mean that pop artists have longer lyrics?</b> Not quite. With their catchy choruses, pop songs rely heavily on repetition, which means that the word count can be skewed in that way. </p>
 	
 <div class="flourish-embed flourish-scatter" data-src="visualisation/1627528"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+<div class="6u 12u$(small)">
+		<h4>Top 10 Artists Average Word Count</h4>
+		<ol>
+    <li>Kate Tempest - 2393.33</li>
+    <li>Megan Thee Stallion	- 2303.36</li>
+    <li>Little Simz	- 2225.39</li>
+    <li>Missy Elliott	- 2052.59</li>
+    <li>Spice Girls	- 2046</li>
+    <li>Ciara	- 2044.75</li>
+    <li>Iggy Azalea	- 2041.66</li>
+    <li>Destiny’s Child -	2028.39</li>
+    <li>Jennifer Lopez - 2017.89</li>
+    <li>The Pussycat Dolls - 2002.25</li>
+	</ol>
+	</div>
+	<div class="6u$ 12u$(small)">
+		<h4>Bottom 10 Artists Average Word Count</h4>
+		<ol>
+		<li>Billie Holiday - 571.68</li>
+    <li>Crystal Castles - 610.88</li>
+    <li>Portishead - 630.52</li>
+    <li>Anna Calvi - 667.02</li>
+    <li>Sarah Vaughan - 671.95</li>
+    <li>Dinah Washington - 681.87</li>
+    <li>Nadine Shah	- 690.78</li>
+    <li>Goldfrapp - 694.44</li>
+    <li>Diana Krall	- 706.35</li>
+    <li>PJ Harvey	- 715.87</li>
+	</ol>
+	</div>
 
 <h4>The widest dictonary</h4>
 
@@ -54,7 +86,9 @@ nav-menu: true
 <!-- Elements -->
 <h2 id="elements">So, what are women singing about?</h2>
 
-<p>The LDA model used has an average coherence score of 45-48%. During the tests, the lowest score was 43% and the highest was 54%. The chart reflects the latter.</p>
+<p>For topic modelling, I used <a href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation">Latent Dirichlet Allocation (LDA)</a>, which is an machine learning model for the classification of documents. In very simplistic terms, the machine will use the <a href="https://en.wikipedia.org/wiki/Dirichlet_distribution">Dirichlet distribution</a> to identify patterns in the text like sequences of terms.</p>
+
+<p>I used a randomized sample of 80% of my data set, passed ten times, to train my model. To test the accuracy of the model, I used the coherence score. At its latest stage, the average coherence score of my model was 45-48%. During the tests, the lowest score was 43% and the highest was 54%. The chart reflects the latter.</p>
 
 <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.css">
 
