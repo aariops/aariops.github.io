@@ -2,7 +2,7 @@
 title: Girl Talk
 subtitle: by Rute Correia
 email: youremailaddress@gmail.com
-description: An NLP analysis of songs by female artists
+description: An analysis of songs by female artists with natural language processing
 url: # the base hostname & protocol for your site
 author:
 street_address:
@@ -18,7 +18,7 @@ tiles-count: 6
 # social settings
 500px_url:
 facebook_url:
-github_url: https://gitlab.com/aariops
+github_url: https://github.com/aariops
 gitlab_url: 
 googleplus_url: 
 instagram_url: 
