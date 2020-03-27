@@ -45,6 +45,7 @@ nav-menu: true
 	
 <div class="flourish-embed flourish-scatter" data-src="visualisation/1627528"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
+<div class="row">
 <div class="6u 12u$(small)">
 		<h4>Top 10 Artists Average Word Count</h4>
 		<ol>
@@ -75,8 +76,9 @@ nav-menu: true
     <li>PJ Harvey	- 715.87</li>
 	</ol>
 	</div>
+</div>
 
-<h4>The widest dictonary</h4>
+<h3>The widest dictonary</h3>
 
 <div class="flourish-embed flourish-scatter" data-src="visualisation/1627297"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
