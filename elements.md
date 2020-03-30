@@ -148,21 +148,6 @@ nav-menu: true
 	<div class="6u$ 12u$(small)">
 		<h4>Bottom 10 Artists Unique Words per Song</h4>
     <p><i><b>(ratio, ascending)</b></i></p>
-    		<ol>
-	  <li>Aretha Franklin - 8.33</li>
-    <li>Billie Holiday - 8.35</li>
-    <li>The Supremes - 9.15</li>
-    <li>Diana Ross - 9.19</li>
-    <li>Dolly Parton - 9.27</li>
-    <li>Kylie Minogue - 9.96</li>
-    <li>Sarah Vaughan - 10.33</li>
-    <li>Dionne Warwick - 10.60</li>
-    <li>Janet Jackson - 10.93</li>
-    <li>Etta James - 11.11</li>
-	</ol>
-	</div>
-</div>
-
 <div class="table-wrapper">
 	<table>
 		<thead>
@@ -182,25 +167,42 @@ nav-menu: true
 			</tr>
 			<tr>
 				<td>The Supremes</td>
-				<td>29.99</td>
+				<td>9.19</td>
 			</tr>
 			<tr>
 				<td>Diana Ross</td>
-				<td>19.99</td>
+				<td>9.15</td>
 			</tr>
 			<tr>
 				<td>Dolly Parton</td>
-				<td>29.99</td>
+				<td>9.27</td>
+			</tr>
+      <tr>
+				<td>Kylie Minogue</td>
+				<td>9.96</td>
+			</tr>
+      <tr>
+				<td>Sarah Vaughan</td>
+				<td>10.33</td>
+			</tr>
+      <tr>
+				<td>Dionne Warwick</td>
+				<td>10.60</td>
+			</tr>
+      <tr>
+				<td>Janet Jackson</td>
+				<td>10.93</td>
+			</tr>
+      <tr>
+				<td>Etta James</td>
+				<td>11.11</td>
 			</tr>
 		</tbody>
-		<tfoot>
-			<tr>
-				<td colspan="2"></td>
-				<td>100.00</td>
-			</tr>
-		</tfoot>
-	</table>
+		</table>
 </div>
+</div>
+
+
 
 <hr class="major" />
 
