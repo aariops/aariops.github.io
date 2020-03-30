@@ -124,6 +124,7 @@ nav-menu: true
 
 <p>In order to provide a more balanced view of the actual range of each act's dictionary, I did a simple ratio of unique words per number of songs. The results were astounding. Not only the leading positions changed, but most of the top 10 and bottom 10 are completely different. </p>
 <p>The ratio below accounts for the number of unique words in each song analyzed. Looking at the top positions, we have Kate Tempest once again on the top spot with 78 unique words in each song. With the exception of multi-instrumentalist Joanna Newsom and R&B sisters VanJess, all the artists on the top 10 are rappers. Notoriously, Azealea Banks is the only one who sits confortably on the top 10 twice, both in absolute unique words and in unique words per songs.</p>
+<p>You can explore these results on the plot below.<b> The furthest to the right, the highest the ratio of unique words per song. The widest (and closer to a yellow shade) the dot is, the biggest the word count.</b></p>
 
 <div class="flourish-embed flourish-scatter" data-src="visualisation/1732863"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
