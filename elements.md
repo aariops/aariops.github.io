@@ -16,7 +16,7 @@ nav-menu: true
 
 <!-- Content -->
 <h2 id="content">Using Natural Language Processing to Decode Song Lyrics by Women</h2>
-<p>I developed <b>"Girl Talk"</b> as my final project for the Data Analysis bootcamp at Ironhack Lisbon, during a dystopian week of social isolation in March 2020. I worked in Python and all the code is available on GitHub. <i>Feedback is very welcome!</i></p>
+<p>I developed <b>"Girl Talk"</b> as my final project for the Data Analysis bootcamp at Ironhack Lisbon, during a dystopian week of social isolation in March 2020. I worked in Python and all the <a href="https://github.com/aariops/final-project" target="_blank">code is available on GitHub</b>. <i>Feedback is very welcome!</i></p>
 <p>Some major inspiration for this work came from the following articles:</p>
 		<ul>
 			<li>The Pudding's feature <a href="https://pudding.cool/projects/vocabulary/" target="_blank">"The Largest Vocabulary In Hip-Hop"</a> - an exploration of the lyrical richness of a wide variety of rappers</li>
@@ -36,7 +36,7 @@ nav-menu: true
     <p>For this project, I looked at lyrics by <b>236 female-only and female-led musical acts</b>. The list encompasses mostly solo artists, some girls bands and a few bands whose lead singers are women.</p>
     <p>I used <a href="https://docs.genius.com/" target="_blank">Genius's API</a> and <a href="https://github.com/johnwmillr/LyricsGenius" target="_blank">LyricsGenius Python client</a> to gather the lyrics. In an effort to reduce duplicates, I excluded edits, remixes, demos, bootlegs and live versions filtering them out of the data retrieved through the API. Since some of the songs were not properly tagged, I tried to minimize repeated lyrics with some manual labour (using string operations).</p>
     <p>My initial list of artists also included Céline Dion, Gloria Estefan and Shakira. After a few trials, I decided it was better to remove them, because the model was identifying French and Spanish lyrics as separate topics. This was good in the sense that was a proof that the model was recognizing text patterns, but bad for my goal. <b>Since language tags were not available, there was no easy way to drop non-English lyrics and so I decided to leave their records out of the sample</b>. In an effort to avoid having many songs in a language other than English, I also dropped three Spanish-sung albums: "Como Ama Una Mujer" and "Por Primera Vez" by Jennifer Lopez, and "Mi Reflejo" by Christina Aguilera. Despite my efforts, it is obvious that some songs in other languages sneaked through.</p>
-    <p>Finally, I got rid of outliers. I dropped the 2% lyrics with the smallest word count as these were mostly interludes, and the 1% with the largest word count, as those were actually not songs (book excerpts, press conferences and even Beyoncé's <a href="https://genius.com/Beyonce-lemonade-film-script-annotated" target="_blank">"Lemonade" film script</a>). In the end, 29772 songs were analyzed with natural language processing. </p>
+    <p>Finally, I got rid of outliers. I dropped the 2% lyrics with the smallest word count as these were mostly interludes, and the 1% with the largest word count, as those were actually not songs (book excerpts, press conferences and even Beyoncé's <a href="https://genius.com/Beyonce-lemonade-film-script-annotated" target="_blank">"Lemonade" film script</a>). <b>In the end, I analyzed 29772 songs with natural language processing.</b> </p>
 
 
 <h3>How many words does a song have?</h3>
@@ -248,7 +248,7 @@ nav-menu: true
 </div>
 
 <p><b>In order to provide a more balanced view of the actual range of each act's dictionary, I did a simple ratio of unique words per number of songs</b>. Surprise, surprise! Not only the leading positions changed, but most of the top 10 and bottom 10 are completely different. </p>
-<p>The ratio below accounts for the number of unique words per song analyzed. We see Kate Tempest once again on the top spot with a ratio of 78 unique words per song. With the exception of multi-instrumentalist Joanna Newsom and R&B sisters VanJess, <b>most of the names on the top 10 are rappers - that's 7 out of 10</b>. Notoriously, <b>Azealea Banks is the only artist who sits confortably on the top 10 twice</b>, both in absolute unique words and in ratio of unique words per song. Another interesting point is Dolly Parton moving from the top 10 to the bottom 10, when we replace the absolute values with this ratio.</p>
+<p>The ratio below accounts for the number of unique words per song analyzed. We see Kate Tempest once again on the top spot with a ratio of 78 unique words per song. With the exception of multi-instrumentalist Joanna Newsom and R&B sisters VanJess, <b>most of the names on the top 10 are rappers - that's 7 out of 10</b>. Notoriously, <b>Azealia Banks is the only artist who sits confortably on the top 10 twice</b>, both in absolute unique words and in ratio of unique words per song. Another interesting point is Dolly Parton moving from the top 10 to the bottom 10, when we replace the absolute values with this ratio.</p>
 <p>You can explore these results on the plot below. <b>The furthest to the right, the highest the ratio of unique words per song. The widest (and closer to a yellow shade) the dot is, the biggest the unique word count.</b></p>
 
 <div class="flourish-embed flourish-scatter" data-src="visualisation/1732863"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
@@ -383,7 +383,7 @@ nav-menu: true
 
 <h3>The topics</h3>
 
-<p>While the main words for each topic (and their weight) vary slightly depending on the sample, the topics were mostly the same throughout the trials: breakups, posse tracks (judging by the slang, I think it's safe to assume those are hip-hop tracks), parties, christmas and seduction seem to always appear. The most distant topic on the Cartesian plane always corresponds to words in Spanish, from the sneaky songs I didn't manage to remove.</p>
+<p>While the main words for each topic (and their weight) vary slightly depending on the sample, the topics were mostly the same throughout the trials: breakups, posse tracks (judging by the slang, I think it's safe to assume those are hip-hop tracks), parties, christmas and seduction seem to always appear. The most distant topic on the the distance map always corresponds to words in Spanish - the sneaky songs I didn't manage to remove.</p>
 
 <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.css">
 
@@ -431,13 +431,11 @@ if(typeof(LDAvis) !== "undefined"){
 <!-- Elements -->
 <h2 id="elements">Future improvements (or things I'd like to do)</h2>
 
-<p>This was literally an education project. From improving the coherence score of my model, to having a bigger data set, there's a lot of room for improvement here. For starters, the data should be manually verified. While the Genius community of contributors, editors and moderators do an incredible work, crowd-sourced data is prone to mislabelling. 
-<ul>
-			<li>Manual verification of data</li>
-			<li>Further categorization: music genres, nationalities, etc.</li>
-			<li>Improving the model</li>
-		</ul>
+<p>This was literally an education project. From improving the coherence score of my model, to having a bigger data set, there's a lot of room for improvement here. For starters, the data should be manually verified. While the Genius community of contributors, editors and moderators do an incredible work keepimg things tidy, there was a lot of both missing and duplicate information. For instance, I would like to have done a time series to check if there were more unique words over time, but date was only available for lessa than half of the full data set. Further categorization like music genres and nationalities could also be interesting to see how language has evolved in different music scenes.</p>
 
-</div>
+
+<h2 id="elements">Thank you for reading!</h2>
+
+<h3>Feel free to share it and press the icons below to find me in other places on the web.</h3>
 
 
