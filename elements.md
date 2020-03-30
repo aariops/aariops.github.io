@@ -383,7 +383,7 @@ nav-menu: true
 
 <h3>The topics</h3>
 
-<p>While the main words for each topic (and their weight) vary slightly depending on the sample, the topics were mostly the same throughout the trials: breakups, female empowerment, posse tracks (judging by the slang, I think it's safe to assume those are hip-hop tracks), parties, christmas and seduction seem to always appear. The most distant topic on the the distance map always corresponds to words in Spanish - the sneaky songs I didn't manage to remove.</p>
+<p>While the main words for each topic (and their weight) vary slightly depending on the sample, the topics were mostly the same throughout the trials: breakups, female empowerment, posse tracks (judging by the slang, I think it's safe to assume those are hip-hop tracks), parties, christmas and seduction themes seem to always appear. The most distant topic on the the distance map always corresponds to words in Spanish - the sneaky songs I didn't manage to remove.</p>
 
 <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.css">
 
