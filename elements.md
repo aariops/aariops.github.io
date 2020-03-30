@@ -114,7 +114,7 @@ nav-menu: true
     <li>Alabama Shakes - 688</li>
     <li>London Grammar - 712</li>
     <li>Shura - 737</li>
-    <li>Laura Mvula - 781/li>
+    <li>Laura Mvula - 781</li>
     <li>Anna Wise - 796</li>
     <li>Kadhja Bonet - 800</li>
 	</ol>
