@@ -243,7 +243,7 @@ nav-menu: true
 	</table>
   </div>
 </div>
-</div>
+</div<!-- Elements -->>
 
 <p>In order to provide a more balanced view of the actual range of each act's dictionary, I did a simple ratio of unique words per number of songs. The results were astounding. Not only the leading positions changed, but most of the top 10 and bottom 10 are completely different. </p>
 <p>The ratio below accounts for the number of unique words per song analyzed. We see Kate Tempest once again on the top spot with 78 unique words per song. With the exception of multi-instrumentalist Joanna Newsom and R&B sisters VanJess, all the artists on the top 10 are rappers. Notoriously, <b>Azealea Banks is the only one who sits confortably on the top 10 twice</b>, both in absolute unique words and in ratio of unique words and number of song. Another key insight is Dolly Parton moving from the top 10 to the bottom 10, when we replace the absolute values with this ratio.</p>
@@ -305,6 +305,8 @@ nav-menu: true
           <td>Azealia Banks</td>
           <td>44.53</td>
       </tr>
+      </tbody>
+      </table>
 	</div>
   </div>
 	<div class="6u$ 12u$(small)">
@@ -371,7 +373,7 @@ nav-menu: true
 
 <p>For topic modelling, I used <a href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation">Latent Dirichlet Allocation (LDA)</a>, which is a machine learning model for the classification of documents. In very simplistic terms, the machine will use the <a href="https://en.wikipedia.org/wiki/Dirichlet_distribution">Dirichlet distribution</a> to identify patterns in the text like sequences of terms.</p>
 
-<p>I used a randomized sample of 80% of my data set, passed ten times, to train my model. To test the accuracy of the model, I used the coherence score. At its latest stage, the average coherence score of my model was 45-48%. During the tests, the lowest score was 43% and the highest was 54%. The chart reflects the latter.</p>
+<p>After processing the text with adequate tokenization, stemming and lemmatization, I used a randomized sample of 80% of my data set (passed ten times) to train my model. To test the accuracy of the model, I used the coherence score. At its latest stage, the average coherence score of my model was 45-48%. During the tests, the lowest score was 43% and the highest was 54%. The chart reflects the latter.</p>
 
 <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.css">
 
