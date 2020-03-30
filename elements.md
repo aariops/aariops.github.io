@@ -91,35 +91,94 @@ nav-menu: true
 <div class="6u 12u$(small)">
 		<h4>Top 10 Artists Unique Word Count</h4>
     <p><i><b>(absolute values, descending)</b></i></p>
-		<ol>
-    <li>Joan Baez - 7574</li>
-    <li>Nicki Minaj - 7567</li>
-    <li>Barbra Streisand - 6274</li>
-    <li>Dolly Parton - 5963</li>
-    <li>Joni Mitchell - 5662</li>
-    <li>Ani DiFranco - 5529</li>
-    <li>Tori Amos - 5393</li>
-    <li>Azealia Banks - 5210</li>
-    <li>Lana Del Rey - 5121</li>
-    <li>Taylor Swift - 4922</li>
-	</ol>
+   	<div class="table-wrapper">
+	<table>
+		<thead>
+			<tr>
+				<th>Artist</th>
+				<th>Word/Song Ratio</th>
+			</tr>
+		</thead>
+		<tbody>
+    <tr>
+    <td>Joan Baez</td><td>7574</td>
+    </tr>
+    <tr>
+    <td>Nicki Minaj</td><td>7567</td>
+    </tr>
+    <tr>
+    <td>Barbra Streisand</td><td>6274</td>
+    </tr>
+    <tr>
+    <td>Dolly Parton</td><td>5963</td>
+    </tr>
+    <tr>
+    <td>Joni Mitchell</td><td>5662</td>
+    </tr>
+    <tr>
+    <td>Ani DiFranco</td><td>5529</td>
+    </tr>
+    <tr>
+    <td>Tori Amos</td><td>5393</td>
+    </tr>
+    <tr>
+    <td>Azealia Banks</td><td>5210</td>
+    </tr>
+    <tr>
+    <td>Lana Del Rey</td><td>5121</td>
+    </tr>
+    <tr>
+    <td>Taylor Swift</td><td>4922</td>
+    </tr>
+	</tbody>
+	</table>
+  </div>
 	</div>
 	<div class="6u$ 12u$(small)">
 		<h4>Bottom 10 Artists Unique Word Count</h4>
     <p><i><b>(absolute values, ascending)</b></i></p>
-    		<ol>
-	  <li>Naomi Scott - 568</li>
-    <li>Kacy Hill - 592</li>
-    <li>Kelsey Lu - 601</li>
-    <li>Sudan Archives - 679</li>
-    <li>Alabama Shakes - 688</li>
-    <li>London Grammar - 712</li>
-    <li>Shura - 737</li>
-    <li>Laura Mvula - 781</li>
-    <li>Anna Wise - 796</li>
-    <li>Kadhja Bonet - 800</li>
-	</ol>
-	</div>
+    	<div class="table-wrapper">
+	<table>
+		<thead>
+			<tr>
+				<th>Artist</th>
+				<th>Word/Song Ratio</th>
+			</tr>
+		</thead>
+		<tbody>
+	  <tr>
+    <td>Naomi Scott</td><td>568</td>
+    </tr>
+    <tr>
+    <td>Kacy Hill</td><td>592</td>
+    </tr>
+    <tr>
+    <td>Kelsey Lu</td><td>601</td>
+    </tr>
+    <tr>
+    <td>Sudan Archives</td><td>679</td>
+    </tr>
+    <tr>
+    <td>Alabama Shakes</td><td>688</td>
+    </tr>
+    <tr>
+    <td>London Grammar</td><td>712</td>
+    </tr>
+    <tr>
+    <td>Shura</td><td>737</td>
+    </tr>
+    <tr>
+    <td>Laura Mvula</td><td>781</td>
+    </tr>
+    <tr>
+    <td>Anna Wise</td><td>796</td>
+    </tr>
+    <tr>
+    <td>Kadhja Bonet</td><td>800</td>
+    </tr>
+	</tbody>
+	</table>
+  </div>
 </div>
 
 <p>In order to provide a more balanced view of the actual range of each act's dictionary, I did a simple ratio of unique words per number of songs. The results were astounding. Not only the leading positions changed, but most of the top 10 and bottom 10 are completely different. </p>
