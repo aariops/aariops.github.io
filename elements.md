@@ -32,13 +32,13 @@ nav-menu: true
 <h3>Getting the data and cleaning the data</h3>
     <p>For this project, I looked at lyrics by 236 female-only and female-led musical acts. The list encompasses mostly solo artists, some girls bands and a few bands whose lead singers are women.</p>
     <p>I used <a href="https://docs.genius.com/">Genius's API</a> and <a href="https://github.com/johnwmillr/LyricsGenius">LyricsGenius Python client</a> to gather the lyrics. In an effort to reduce duplicates, I excluded edits, remixes, demos, bootlegs and live versions filtering them out of the data retrieved through the API. Since some of the songs were not properly tagged, I tried to minimize repeated lyrics with some manual labour (using string operations). However, some sneaky ones might still be in the full data set.</p>
-    <p>My initial list of artists included Céline Dion, Gloria Estefan and Shakira. After a few trials, I decided it was better to remove them, because the model was identifying French and Spanish lyrics as separate topics. This was good in the sense that was a proof that the model was recognizing text patterns, but bad for my goal. Since language tags were not available, there was no easy way to drop non-English lyrics and so I decided to leave their records out of the sample. In an effort to avoid having many songs in a language other than English, I also dropped three Spanish-sung albums: "Como Ama Una Mujer" and "Por Primera Vez" by Jennifer Lopez, and "Mi Reflejo" by Christina Aguilera. I also added some Spanish words that kept popping up as frequent terms to the stop-words list. </p>
+    <p>My initial list of artists included Céline Dion, Gloria Estefan and Shakira. After a few trials, I decided it was better to remove them, because the model was identifying French and Spanish lyrics as separate topics. This was good in the sense that was a proof that the model was recognizing text patterns, but bad for my goal. Since language tags were not available, there was no easy way to drop non-English lyrics and so I decided to leave their records out of the sample. In an effort to avoid having many songs in a language other than English, I also dropped three Spanish-sung albums: "Como Ama Una Mujer" and "Por Primera Vez" by Jennifer Lopez, and "Mi Reflejo" by Christina Aguilera. Despite my efforts, it is obvious that some songs in other languages sneaked through.</p>
     <p>Finally, I got rid of outliers. I dropped the 2% lyrics with the smallest word count as these were mostly interludes, and the 1% with the largest word count, as those were actually not songs (book excerpts, press conferences and even Beyoncé's <a herf="https://genius.com/Beyonce-lemonade-film-script-annotated">"Lemonade" film script</a>). In the end, 29772 songs were analyzed with natural language processing. </p>
 
 
 <h3>How many words does a song have?</h3>
 
-<p><b>The furthest right on the plot, the more words an artist uses on average per song.</b> English spoken word performer Kate Tempest leads the way, but the podium is only complete with two rappers: Megan Thee Stalion and Little Simz. Rap and spoken word are genres anchored on the power of words and lyricism, so it comes as no surprise that most of the top positions in this category are taken by rappers: Missy Elliott, Ciara and Iggy Azalea are all on the top 10.</p>
+<p><b>The furthest right on the plot, the more words an artist uses on average per song.</b> English spoken word performer Kate Tempest leads the way, but the podium is only complete with two rappers: Megan Thee Stalion and Little Simz. Rap and spoken word are anchored on the power of words and lyricism, so it comes as no surprise that most of the top positions in this category are taken by rappers: Missy Elliott, Ciara and Iggy Azalea are all on the top 10.</p>
 <p>Around the 2000 words per song mark, we also find multiple girls bands: Spice Girls, Destiny's Child and The Pussycat Dolls. The fact that their songs had to display the vocal talents of their various members <i>(even if Beyoncé and Nicole Scherzinger had more proeminent features)</i> might be an explanation for this.</p>
 <p>On the bottom end we find some indie, rock, jazz and electronic acts. Pianists like Diana Krall, Dinah Washington and Norah Jones; indie rock sensations such as Anna Calvi, Cat Power and Sharon Van Etten; electronic legends like Björk, Goldfrapp and Portishead all fall below 800 words per song. Jazz pioneer Billie Holiday is the one with the shortest lyrics - probably due to the fact that her career happened before the record industry boom of the 60s.</p>
 <p><b>Does this mean that pop artists have longer lyrics?</b> Not quite. With their catchy choruses, pop songs rely heavily on repetition, which means that the word count can be skewed in that way. </p>
@@ -80,15 +80,53 @@ nav-menu: true
 
 <h3>The widest dictonary</h3>
 
+<p>My first approach to assess the diversity in vocabulary was to do a simple unique word count. This happened after removing a list of stop words. These words convey meaning in the human world, but are not useful in a computer-processing context. Most pronouns, prepositions and conjunctions fall in this category.</p>
+<p>After plotting the initial results, it became clear that in many cases bigger discographies translated into a wider lexicon. For instance, Joan Baez appears just slightly ahead of Nicki Minaj, leading the score, but she has almost twice as many songs. Dolly Parton and Barbra Streisand also appear fairly isolated in the following positions, but they are also the artists with more songs under scrutiny (643 and 553 respectively).</p>
+<p>You can explore these results on the plot below. <b>The furthest to the right, the biggest the word count. The widest the circle, the biggest thw song count.</b></p>
+
 <div class="flourish-embed flourish-scatter" data-src="visualisation/1627297"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
+<div class="row">
+<div class="6u 12u$(small)">
+		<h4>Top 10 Artists Unique Word Count (absolute values)</h4>
+		<ol>
+    <li>Kate Tempest - 2393.33</li>
+    <li>Megan Thee Stallion	- 2303.36</li>
+    <li>Little Simz	- 2225.39</li>
+    <li>Missy Elliott	- 2052.59</li>
+    <li>Spice Girls	- 2046</li>
+    <li>Ciara	- 2044.75</li>
+    <li>Iggy Azalea	- 2041.66</li>
+    <li>Destiny’s Child -	2028.39</li>
+    <li>Jennifer Lopez - 2017.89</li>
+    <li>The Pussycat Dolls - 2002.25</li>
+	</ol>
+	</div>
+	<div class="6u$ 12u$(small)">
+		<h4>Bottom 10 Artists Unique Word Count (absolute values)</h4>
+		<ol>
+		<li>Billie Holiday - 571.68</li>
+    <li>Crystal Castles - 610.88</li>
+    <li>Portishead - 630.52</li>
+    <li>Anna Calvi - 667.02</li>
+    <li>Sarah Vaughan - 671.95</li>
+    <li>Dinah Washington - 681.87</li>
+    <li>Nadine Shah	- 690.78</li>
+    <li>Goldfrapp - 694.44</li>
+    <li>Diana Krall	- 706.35</li>
+    <li>PJ Harvey	- 715.87</li>
+	</ol>
+	</div>
+</div>
+
+<p>In order to provide a more balanced view of the actual range of each one's dictionary, I did a simple ratio of unique words per number of songs. </p>
 
 <hr class="major" />
 
 <!-- Elements -->
 <h2 id="elements">So, what are women singing about?</h2>
 
-<p>For topic modelling, I used <a href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation">Latent Dirichlet Allocation (LDA)</a>, which is an machine learning model for the classification of documents. In very simplistic terms, the machine will use the <a href="https://en.wikipedia.org/wiki/Dirichlet_distribution">Dirichlet distribution</a> to identify patterns in the text like sequences of terms.</p>
+<p>For topic modelling, I used <a href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation">Latent Dirichlet Allocation (LDA)</a>, which is a machine learning model for the classification of documents. In very simplistic terms, the machine will use the <a href="https://en.wikipedia.org/wiki/Dirichlet_distribution">Dirichlet distribution</a> to identify patterns in the text like sequences of terms.</p>
 
 <p>I used a randomized sample of 80% of my data set, passed ten times, to train my model. To test the accuracy of the model, I used the coherence score. At its latest stage, the average coherence score of my model was 45-48%. During the tests, the lowest score was 43% and the highest was 54%. The chart reflects the latter.</p>
 
