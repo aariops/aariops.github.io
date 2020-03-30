@@ -132,18 +132,55 @@ nav-menu: true
 <div class="6u 12u$(small)">
 		<h4>Top 10 Artists Unique Words per Song</h4>
     <p><i><b>(ratio, descending)</b></i></p>
-		<ol>
-    <li>Kate Tempest - 78.48</li>
-    <li>Noname - 67.19</li>
-    <li>Ivy Sole - 65.59</li>
-    <li>Joanna Newsom	- 57.27</li>
-    <li>Lizzo	- 51.35</li>
-    <li>Sampa The Great	- 48.43</li>
-    <li>Lauryn Hill	- 45.30</li>
-    <li>Little Simz - 	45.06</li>
-    <li>VanJess	- 44.95</li>
-    <li>Azealia Banks	- 44.53</li>
-	</ol>
+	<div class="table-wrapper">
+	<table>
+		<thead>
+			<tr>
+				<th>Artist</th>
+				<th>Word/Song Ratio</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+          <td>Kate Tempest</td>
+          <td>78.48</td>
+        </tr> 
+      <tr>
+          <td>Noname</td>
+          <td>67.19</td>
+      </tr> 
+      <tr>
+          <td>Ivy Sole</td>
+          <td>65.59</td>
+      </tr> 
+      <tr>
+          <td>Joanna Newsom</td>
+          <td>57.27</td>
+            </tr> 
+      <tr>
+          <td>Lizzo</td>
+          <td>51.35</td>
+      </tr> 
+      <tr>
+          <td>Sampa The Great</td>
+          <td>48.43</td>
+      </tr> 
+      <tr>
+          <td>Lauryn Hill</td>
+          <td>45.30</td>
+      </tr> 
+      <tr>
+          <td>Little Simz</td>
+          <td>45.06</td>
+      </tr> 
+      <tr>
+          <td>VanJess</td>
+          <td>44.95</td>
+      </tr> 
+      <tr>
+          <td>Azealia Banks</td>
+          <td>44.53</td>
+      </tr>
 	</div>
 	<div class="6u$ 12u$(small)">
 		<h4>Bottom 10 Artists Unique Words per Song</h4>
@@ -152,8 +189,8 @@ nav-menu: true
 	<table>
 		<thead>
 			<tr>
-				<th>Name</th>
-				<th>Ratio</th>
+				<th>Artist</th>
+				<th>Word/Song Ratio</th>
 			</tr>
 		</thead>
 		<tbody>
