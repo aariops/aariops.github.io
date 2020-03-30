@@ -11,30 +11,32 @@ nav-menu: true
 <section id="one">
 	<div class="inner">
 		<header class="major">
-			<h1>Using Natural Language Processing to Decode Songs</h1>
+			<h1>Girl Talk</h1>
 		</header>
 
 <!-- Content -->
-<h2 id="content">Music is inspiring, and so is data</h2>
-<p>I developped this as my final project for the Data Analysis bootcamp at Ironhack Lisbon, during a lonely week of social isolation in March 2020.</p>
+<h2 id="content">Using Natural Language Processing to Decode Song Lyrics by Female Artists</h2>
+<p>I developed "Girl Talk" as my final project for the Data Analysis bootcamp at Ironhack Lisbon, during a lonely week of social isolation in March 2020.</p>
 <p>Some major inspiration for this work came from the following articles:</p>
 		<ul>
-			<li>The Pudding's feature <a href="https://pudding.cool/projects/vocabulary/">"The Largest Vocabulary In Hip-Hop"</a> - an exploration of the lyrical richness of a wide variety of rappers</li>
-			<li>Another Pudding's article: <a href="https://pudding.cool/2017/09/hip-hop-words/">"The Words That Are Most Hip-Hop"</a> - a deep dive into the language of the genre (also by rapper)</li>
-			<li><a href="https://towardsdatascience.com/drake-using-natural-language-processing-to-understand-his-lyrics-49e54ace3662">This one by Brandon Punturo</a>, who used natural language processing to understand Drake's lyrics</li>
+			<li>The Pudding's feature <a href="https://pudding.cool/projects/vocabulary/" target="_blank">"The Largest Vocabulary In Hip-Hop"</a> - an exploration of the lyrical richness of a wide variety of rappers</li>
+			<li>Another Pudding's article: <a href="https://pudding.cool/2017/09/hip-hop-words/" target="_blank">"The Words That Are Most Hip-Hop"</a> - a deep dive into the language of that music genre (detailed by rapper)</li>
+			<li><a href="https://towardsdatascience.com/drake-using-natural-language-processing-to-understand-his-lyrics-49e54ace3662" target="_blank">This one by Brandon Punturo</a>, who used natural language processing to understand Drake's lyrics</li>
 		</ul>
 
 <hr class="major" />
 
 <!-- Break -->
-<h2 id="content">What about the women?</h2>
-		<p><a href="https://www.bbc.com/news/entertainment-arts-47232677">According to the BBC</a>, the gender gap in the music industry is actually widening. Reflecting on music made by women can be an important step to narrow the gap. </p>
+<h2 id="content">What about music made by women?</h2>
+	<p>It's hardly a coincidence that none of the articles above is focused on women. While the ones by the Pudding focus on hip-hop as a whole, it is noteworthy that women remain a smaller slice of the rappers' pie. It's not a rap-only problem, though. <a href="https://www.bbc.com/news/entertainment-arts-47232677" target="_blank">As the BBC points out</a>, the gender gap in the music industry has been widening this last decade in a multitude of ways - from accolades to charts, from collaborations to festival bookings.</p>
+  <p><b>For this project I wanted to pay a tribute to music made by women. What better way to do so than listening to their work and talent?</b></p>
+  <p><i>I tried to make this as clear as possible, while providing some technical details. It might get a bit geeky. You've been warned.</i></p>
 
 <h3>Getting the data and cleaning the data</h3>
     <p>For this project, I looked at lyrics by 236 female-only and female-led musical acts. The list encompasses mostly solo artists, some girls bands and a few bands whose lead singers are women.</p>
-    <p>I used <a href="https://docs.genius.com/">Genius's API</a> and <a href="https://github.com/johnwmillr/LyricsGenius">LyricsGenius Python client</a> to gather the lyrics. In an effort to reduce duplicates, I excluded edits, remixes, demos, bootlegs and live versions filtering them out of the data retrieved through the API. Since some of the songs were not properly tagged, I tried to minimize repeated lyrics with some manual labour (using string operations). However, some sneaky ones might still be in the full data set.</p>
+    <p>I used <a href="https://docs.genius.com/" target="_blank">Genius's API</a> and <a href="https://github.com/johnwmillr/LyricsGenius" target="_blank">LyricsGenius Python client</a> to gather the lyrics. In an effort to reduce duplicates, I excluded edits, remixes, demos, bootlegs and live versions filtering them out of the data retrieved through the API. Since some of the songs were not properly tagged, I tried to minimize repeated lyrics with some manual labour (using string operations). However, some sneaky ones might still be in the full data set.</p>
     <p>My initial list of artists included Céline Dion, Gloria Estefan and Shakira. After a few trials, I decided it was better to remove them, because the model was identifying French and Spanish lyrics as separate topics. This was good in the sense that was a proof that the model was recognizing text patterns, but bad for my goal. Since language tags were not available, there was no easy way to drop non-English lyrics and so I decided to leave their records out of the sample. In an effort to avoid having many songs in a language other than English, I also dropped three Spanish-sung albums: "Como Ama Una Mujer" and "Por Primera Vez" by Jennifer Lopez, and "Mi Reflejo" by Christina Aguilera. Despite my efforts, it is obvious that some songs in other languages sneaked through.</p>
-    <p>Finally, I got rid of outliers. I dropped the 2% lyrics with the smallest word count as these were mostly interludes, and the 1% with the largest word count, as those were actually not songs (book excerpts, press conferences and even Beyoncé's <a herf="https://genius.com/Beyonce-lemonade-film-script-annotated">"Lemonade" film script</a>). In the end, 29772 songs were analyzed with natural language processing. </p>
+    <p>Finally, I got rid of outliers. I dropped the 2% lyrics with the smallest word count as these were mostly interludes, and the 1% with the largest word count, as those were actually not songs (book excerpts, press conferences and even Beyoncé's <a href="https://genius.com/Beyonce-lemonade-film-script-annotated" target="_blank">"Lemonade" film script</a>). In the end, 29772 songs were analyzed with natural language processing. </p>
 
 
 <h3>How many words does a song have?</h3>
@@ -243,7 +245,7 @@ nav-menu: true
 	</table>
   </div>
 </div>
-</div<!-- Elements -->>
+</div>
 
 <p>In order to provide a more balanced view of the actual range of each act's dictionary, I did a simple ratio of unique words per number of songs. The results were astounding. Not only the leading positions changed, but most of the top 10 and bottom 10 are completely different. </p>
 <p>The ratio below accounts for the number of unique words per song analyzed. We see Kate Tempest once again on the top spot with 78 unique words per song. With the exception of multi-instrumentalist Joanna Newsom and R&B sisters VanJess, all the artists on the top 10 are rappers. Notoriously, <b>Azealea Banks is the only one who sits confortably on the top 10 twice</b>, both in absolute unique words and in ratio of unique words and number of song. Another key insight is Dolly Parton moving from the top 10 to the bottom 10, when we replace the absolute values with this ratio.</p>
@@ -367,13 +369,21 @@ nav-menu: true
 </div>
 </div>
 
+<!-- Break -->
+
 <hr class="major" />
 
 <h2 id="elements">So, what are women singing about?</h2>
 
-<p>For topic modelling, I used <a href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation">Latent Dirichlet Allocation (LDA)</a>, which is a machine learning model for the classification of documents. In very simplistic terms, the machine will use the <a href="https://en.wikipedia.org/wiki/Dirichlet_distribution">Dirichlet distribution</a> to identify patterns in the text like sequences of terms.</p>
+<h3>The technical explanation</h3>
 
-<p>After processing the text with adequate tokenization, stemming and lemmatization, I used a randomized sample of 80% of my data set (passed ten times) to train my model. To test the accuracy of the model, I used the coherence score. At its latest stage, the average coherence score of my model was 45-48%. During the tests, the lowest score was 43% and the highest was 54%. The chart reflects the latter.</p>
+<p>For topic modelling, I used <a href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation">Latent Dirichlet Allocation (LDA)</a>, which is a machine learning model for classifying documents. In very simplistic terms, the machine will use the <a href="https://en.wikipedia.org/wiki/Dirichlet_distribution">Dirichlet distribution</a> to identify patterns in the text like sequences of terms.</p>
+
+<p>After processing the text with adequate tokenization, stemming and lemmatization, I used a randomized sample of 80% of my data set (passed ten times) to train my model. To test the accuracy of the model, I used the coherence score. At its latest stage, the average coherence score of my model was 45-48%. During the tests, the lowest score was 43% and the highest was 54%.</p>
+
+<h3>The topics</h3>
+
+<p>While </p>
 
 <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.css">
 
