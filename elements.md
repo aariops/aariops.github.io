@@ -16,6 +16,7 @@ nav-menu: true
 
 <!-- Content -->
 <h2 id="content">Music is inspiring, and so is data</h2>
+<p>I developped this as my final project for the Data Analysis bootcamp at Ironhack Lisbon, during a lonely week of social isolation in March 2020.</p>
 <p>Some major inspiration for this work came from the following articles:</p>
 		<ul>
 			<li>The Pudding's feature <a href="https://pudding.cool/projects/vocabulary/">"The Largest Vocabulary In Hip-Hop"</a> - an exploration of the lyrical richness of a wide variety of rappers</li>
@@ -40,7 +41,7 @@ nav-menu: true
 
 <p><b>The furthest right on the plot, the more words an artist uses on average per song.</b> English spoken word performer Kate Tempest leads the way, but the podium is only complete with two rappers: Megan Thee Stalion and Little Simz. Rap and spoken word are anchored on the power of words and lyricism, so it comes as no surprise that most of the top positions in this category are taken by rappers: Missy Elliott, Ciara and Iggy Azalea are all on the top 10.</p>
 <p>Around the 2000 words per song mark, we also find multiple girls bands: Spice Girls, Destiny's Child and The Pussycat Dolls. The fact that their songs had to display the vocal talents of their various members <i>(even if Beyoncé and Nicole Scherzinger had more proeminent features)</i> might be an explanation for this.</p>
-<p>On the bottom end we find some indie, rock, jazz and electronic acts. Pianists like Diana Krall, Dinah Washington and Norah Jones; indie rock sensations such as Anna Calvi, Cat Power and Sharon Van Etten; electronic legends like Björk, Goldfrapp and Portishead all fall below 800 words per song. Jazz pioneer Billie Holiday is the one with the shortest lyrics - probably due to the fact that her career happened before the record industry boom of the 60s.</p>
+<p>On the bottom end there are some indie, rock, jazz and electronic acts. Pianists like Diana Krall, Dinah Washington and Norah Jones; indie rock sensations such as Anna Calvi, Cat Power and Sharon Van Etten; electronic legends like Björk, Goldfrapp and Portishead all fall below 800 words per song. Jazz pioneer Billie Holiday is the one with the shortest lyrics - probably due to the fact that her career happened before the record industry boom of the 60s. </p>
 <p><b>Does this mean that pop artists have longer lyrics?</b> Not quite. With their catchy choruses, pop songs rely heavily on repetition, which means that the word count can be skewed in that way. </p>
 	
 <div class="flourish-embed flourish-scatter" data-src="visualisation/1627528"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
@@ -89,7 +90,7 @@ nav-menu: true
 <div class="row">
 <div class="6u 12u$(small)">
 		<h4>Top 10 Artists Unique Word Count</h4>
-    <p><i><b>(absolute values)</b></i></p>
+    <p><i><b>(absolute values, descending)</b></i></p>
 		<ol>
     <li>Joan Baez - 7574</li>
     <li>Nicki Minaj - 7567</li>
@@ -105,7 +106,7 @@ nav-menu: true
 	</div>
 	<div class="6u$ 12u$(small)">
 		<h4>Bottom 10 Artists Unique Word Count</h4>
-    <p><i><b>(absolute values)</b></i></p>
+    <p><i><b>(absolute values, ascending)</b></i></p>
     		<ol>
 	  <li>Naomi Scott - 568</li>
     <li>Kacy Hill - 592</li>
@@ -121,7 +122,45 @@ nav-menu: true
 	</div>
 </div>
 
-<p>In order to provide a more balanced view of the actual range of each one's dictionary, I did a simple ratio of unique words per number of songs. The difference in results was astounding.</p>
+<p>In order to provide a more balanced view of the actual range of each act's dictionary, I did a simple ratio of unique words per number of songs. The results were astounding. Not only the leading positions changed, but most of the top 10 and bottom 10 are completely different. The main exception is Azealea Banks, who sits confortably on the top 10 both in absolute unique words and in unique words per songs lists.</p>
+<p>In order to provide a more balanced view of the actual range of each act's dictionary, I did a simple ratio of unique words per number of songs. The results were astounding. Not only the leading positions changed, but most of the top 10 and bottom 10 are completely different. The main exception is Azealea Banks, who sits confortably on the top 10 both in absolute unique words and in unique words per songs lists.</p>
+
+<div class="flourish-embed flourish-scatter" data-src="visualisation/1732863"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+<div class="row">
+<div class="6u 12u$(small)">
+		<h4>Top 10 Artists Unique Words per Song</h4>
+    <p><i><b>(ratio, descending)</b></i></p>
+		<ol>
+    <li>Kate Tempest - 78.48</li>
+    <li>Noname - 67.19</li>
+    <li>Ivy Sole - 65.59</li>
+    <li>Joanna Newsom	- 57.27</li>
+    <li>Lizzo	- 51.35</li>
+    <li>Sampa The Great	- 48.43</li>
+    <li>Lauryn Hill	- 45.30</li>
+    <li>Little Simz - 	45.06</li>
+    <li>VanJess	- 44.95</li>
+    <li>Azealia Banks	- 44.53</li>
+	</ol>
+	</div>
+	<div class="6u$ 12u$(small)">
+		<h4>Bottom 10 Artists Unique Words per Song</h4>
+    <p><i><b>(ratio, ascending)</b></i></p>
+    		<ol>
+	  <li>Aretha Franklin - 8.33</li>
+    <li>Billie Holiday - 8.35</li>
+    <li>The Supremes - 9.15</li>
+    <li>Diana Ross - 9.19</li>
+    <li>Dolly Parton - 9.27</li>
+    <li>Kylie Minogue - 9.96</li>
+    <li>Sarah Vaughan - 10.33</li>
+    <li>Dionne Warwick - 10.60</li>
+    <li>Janet Jackson - 10.93</li>
+    <li>Etta James - 11.11</li>
+	</ol>
+	</div>
+</div>
 
 <hr class="major" />
 
