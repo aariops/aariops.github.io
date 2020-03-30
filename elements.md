@@ -431,7 +431,7 @@ if(typeof(LDAvis) !== "undefined"){
 <!-- Elements -->
 <h2 id="elements">Future improvements (or things I'd like to do)</h2>
 
-<p>This was literally an education project. From improving the coherence score of my model, to having a bigger data set, there's a lot of room for improvement here. For starters, the data should be manually verified. While the Genius community of contributors, editors and moderators do an incredible work keepimg things tidy, there was a lot of both missing and duplicate information. For instance, I would like to have done a time series to check if there were more unique words over time, but date was only available for lessa than half of the full data set. Further categorization like music genres and nationalities could also be interesting to see how language has evolved in different music scenes.</p>
+<p>This was literally an education project. From improving the coherence score of my model, to having a bigger data set, there's a lot of room for improvement here. For starters, the data should be manually verified. While the Genius community of contributors, editors and moderators do an incredible work keeping things tidy, there was a lot of both missing and duplicate information. For instance, I would like to have done a time series to check if there were more unique words over time, but date was only available for less than half of the full data set. Further categorization like music genres and nationalities could also be interesting to see how language has evolved in different music scenes.</p>
 
 
 <h2 id="elements">Thank you for reading!</h2>
