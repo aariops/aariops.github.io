@@ -82,7 +82,7 @@ nav-menu: true
 <h3>The widest dictonary</h3>
 
 <p>My first approach to assess the diversity in vocabulary was to do a simple unique word count. This happened after removing a list of stop words. These words convey meaning in the human world, but are not useful in a computer-processing context. Most pronouns, prepositions and conjunctions fall in this category.</p>
-<p>After plotting the initial results, it became clear that in many cases bigger discographies translated into a wider lexicon. For instance, Joan Baez appears just slightly ahead of Nicki Minaj, leading the score, but she has almost twice as many songs. Dolly Parton and Barbra Streisand also appear fairly isolated in the following positions, but they are also the artists with more songs under scrutiny (643 and 553 respectively).</p>
+<p>After plotting the initial results, it became clear that in many cases bigger discographies translated into a wider lexicon. For instance, Joan Baez appears just slightly ahead of Nicki Minaj, leading the score, but she has almost twice as many songs. Dolly Parton and Barbra Streisand also appear fairly isolated in the following positions, but they are also the artists with more songs under scrutiny (643 and 553 respectively). On the bottom positions we see Naomi Scott, who is yet to release an album, and a few others who have only published an LP so far, such as Kacy Hill, Kelsey Lu and Sudan Archives.</p>
 <p>You can explore these results on the plot below. <b>The furthest to the right, the biggest the word count. The widest the circle, the biggest the song count.</b></p>
 
 <div class="flourish-embed flourish-scatter" data-src="visualisation/1627297"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
@@ -123,8 +123,8 @@ nav-menu: true
 </div>
 
 <p>In order to provide a more balanced view of the actual range of each act's dictionary, I did a simple ratio of unique words per number of songs. The results were astounding. Not only the leading positions changed, but most of the top 10 and bottom 10 are completely different. </p>
-<p>The ratio below accounts for the number of unique words in each song analyzed. Looking at the top positions, we have Kate Tempest once again on the top spot with 78 unique words in each song. With the exception of multi-instrumentalist Joanna Newsom and R&B sisters VanJess, all the artists on the top 10 are rappers. Notoriously, Azealea Banks is the only one who sits confortably on the top 10 twice, both in absolute unique words and in unique words per songs.</p>
-<p>You can explore these results on the plot below.<b> The furthest to the right, the highest the ratio of unique words per song. The widest (and closer to a yellow shade) the dot is, the biggest the word count.</b></p>
+<p>The ratio below accounts for the number of unique words in each song analyzed. We see Kate Tempest once again on the top spot with 78 unique words per song. With the exception of multi-instrumentalist Joanna Newsom and R&B sisters VanJess, all the artists on the top 10 are rappers. Notoriously, <b>Azealea Banks is the only one who sits confortably on the top 10 twice</b>, both in absolute unique words and in ratio of unique words and number of song. Another key insight is Dolly Parton moving from the top 10 to the bottom 10, when we replace the absolute values with the ratio.</p>
+<p>You can explore these results on the plot below. <b>The furthest to the right, the highest the ratio of unique words per song. The widest (and closer to a yellow shade) the dot is, the biggest the word count.</b></p>
 
 <div class="flourish-embed flourish-scatter" data-src="visualisation/1732863"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
