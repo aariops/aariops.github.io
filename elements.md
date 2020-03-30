@@ -82,44 +82,46 @@ nav-menu: true
 
 <p>My first approach to assess the diversity in vocabulary was to do a simple unique word count. This happened after removing a list of stop words. These words convey meaning in the human world, but are not useful in a computer-processing context. Most pronouns, prepositions and conjunctions fall in this category.</p>
 <p>After plotting the initial results, it became clear that in many cases bigger discographies translated into a wider lexicon. For instance, Joan Baez appears just slightly ahead of Nicki Minaj, leading the score, but she has almost twice as many songs. Dolly Parton and Barbra Streisand also appear fairly isolated in the following positions, but they are also the artists with more songs under scrutiny (643 and 553 respectively).</p>
-<p>You can explore these results on the plot below. <b>The furthest to the right, the biggest the word count. The widest the circle, the biggest thw song count.</b></p>
+<p>You can explore these results on the plot below. <b>The furthest to the right, the biggest the word count. The widest the circle, the biggest the song count.</b></p>
 
 <div class="flourish-embed flourish-scatter" data-src="visualisation/1627297"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
 <div class="row">
 <div class="6u 12u$(small)">
-		<h4>Top 10 Artists Unique Word Count (absolute values)</h4>
+		<h4>Top 10 Artists Unique Word Count</h4>
+    <p><i><b>(absolute values)</b></i></p>
 		<ol>
-    <li>Kate Tempest - 2393.33</li>
-    <li>Megan Thee Stallion	- 2303.36</li>
-    <li>Little Simz	- 2225.39</li>
-    <li>Missy Elliott	- 2052.59</li>
-    <li>Spice Girls	- 2046</li>
-    <li>Ciara	- 2044.75</li>
-    <li>Iggy Azalea	- 2041.66</li>
-    <li>Destiny’s Child -	2028.39</li>
-    <li>Jennifer Lopez - 2017.89</li>
-    <li>The Pussycat Dolls - 2002.25</li>
+    <li>Joan Baez - 7574</li>
+    <li>Nicki Minaj - 7567</li>
+    <li>Barbra Streisand - 6274</li>
+    <li>Dolly Parton - 5963</li>
+    <li>Joni Mitchell - 5662</li>
+    <li>Ani DiFranco - 5529</li>
+    <li>Tori Amos - 5393</li>
+    <li>Azealia Banks - 5210</li>
+    <li>Lana Del Rey - 5121</li>
+    <li>Taylor Swift - 4922</li>
 	</ol>
 	</div>
 	<div class="6u$ 12u$(small)">
-		<h4>Bottom 10 Artists Unique Word Count (absolute values)</h4>
-		<ol>
-		<li>Billie Holiday - 571.68</li>
-    <li>Crystal Castles - 610.88</li>
-    <li>Portishead - 630.52</li>
-    <li>Anna Calvi - 667.02</li>
-    <li>Sarah Vaughan - 671.95</li>
-    <li>Dinah Washington - 681.87</li>
-    <li>Nadine Shah	- 690.78</li>
-    <li>Goldfrapp - 694.44</li>
-    <li>Diana Krall	- 706.35</li>
-    <li>PJ Harvey	- 715.87</li>
+		<h4>Bottom 10 Artists Unique Word Count</h4>
+    <p><i><b>(absolute values)</b></i></p>
+    		<ol>
+	  <li>Naomi Scott - 568</li>
+    <li>Kacy Hill - 592</li>
+    <li>Kelsey Lu - 601</li>
+    <li>Sudan Archives - 679</li>
+    <li>Alabama Shakes - 688</li>
+    <li>London Grammar - 712</li>
+    <li>Shura - 737</li>
+    <li>Laura Mvula - 781/li>
+    <li>Anna Wise - 796</li>
+    <li>Kadhja Bonet - 800</li>
 	</ol>
 	</div>
 </div>
 
-<p>In order to provide a more balanced view of the actual range of each one's dictionary, I did a simple ratio of unique words per number of songs. </p>
+<p>In order to provide a more balanced view of the actual range of each one's dictionary, I did a simple ratio of unique words per number of songs. The difference in results was astounding.</p>
 
 <hr class="major" />
 
