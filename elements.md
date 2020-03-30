@@ -243,9 +243,10 @@ nav-menu: true
 	</table>
   </div>
 </div>
+</div>
 
 <p>In order to provide a more balanced view of the actual range of each act's dictionary, I did a simple ratio of unique words per number of songs. The results were astounding. Not only the leading positions changed, but most of the top 10 and bottom 10 are completely different. </p>
-<p>The ratio below accounts for the number of unique words in each song analyzed. We see Kate Tempest once again on the top spot with 78 unique words per song. With the exception of multi-instrumentalist Joanna Newsom and R&B sisters VanJess, all the artists on the top 10 are rappers. Notoriously, <b>Azealea Banks is the only one who sits confortably on the top 10 twice</b>, both in absolute unique words and in ratio of unique words and number of song. Another key insight is Dolly Parton moving from the top 10 to the bottom 10, when we replace the absolute values with the ratio.</p>
+<p>The ratio below accounts for the number of unique words per song analyzed. We see Kate Tempest once again on the top spot with 78 unique words per song. With the exception of multi-instrumentalist Joanna Newsom and R&B sisters VanJess, all the artists on the top 10 are rappers. Notoriously, <b>Azealea Banks is the only one who sits confortably on the top 10 twice</b>, both in absolute unique words and in ratio of unique words and number of song. Another key insight is Dolly Parton moving from the top 10 to the bottom 10, when we replace the absolute values with this ratio.</p>
 <p>You can explore these results on the plot below. <b>The furthest to the right, the highest the ratio of unique words per song. The widest (and closer to a yellow shade) the dot is, the biggest the word count.</b></p>
 
 <div class="flourish-embed flourish-scatter" data-src="visualisation/1732863"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
@@ -366,7 +367,6 @@ nav-menu: true
 
 <hr class="major" />
 
-<!-- Elements -->
 <h2 id="elements">So, what are women singing about?</h2>
 
 <p>For topic modelling, I used <a href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation">Latent Dirichlet Allocation (LDA)</a>, which is a machine learning model for the classification of documents. In very simplistic terms, the machine will use the <a href="https://en.wikipedia.org/wiki/Dirichlet_distribution">Dirichlet distribution</a> to identify patterns in the text like sequences of terms.</p>
