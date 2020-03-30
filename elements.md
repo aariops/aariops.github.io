@@ -163,6 +163,45 @@ nav-menu: true
 	</div>
 </div>
 
+<div class="table-wrapper">
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Ratio</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Aretha Franklin</td>
+				<td>8.33</td>
+			</tr>
+			<tr>
+				<td>Billie Holiday</td>
+				<td>8.35</td>
+			</tr>
+			<tr>
+				<td>The Supremes</td>
+				<td>29.99</td>
+			</tr>
+			<tr>
+				<td>Diana Ross</td>
+				<td>19.99</td>
+			</tr>
+			<tr>
+				<td>Dolly Parton</td>
+				<td>29.99</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="2"></td>
+				<td>100.00</td>
+			</tr>
+		</tfoot>
+	</table>
+</div>
+
 <hr class="major" />
 
 <!-- Elements -->
