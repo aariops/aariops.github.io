@@ -16,7 +16,7 @@ nav-menu: true
 
 <!-- Content -->
 <h2 id="content">Using Natural Language Processing to Decode Song Lyrics by Women</h2>
-<p>I developed <b>"Girl Talk"</b> as my final project for the Data Analysis bootcamp at Ironhack Lisbon, during a dystopian week of social isolation in March 2020. I worked in Python and all the <a href="https://github.com/aariops/final-project" target="_blank">code is available on GitHub</b>. <i>Feedback is very welcome!</i></p>
+<p>I developed <b>"Girl Talk"</b> as my final project for the Data Analysis bootcamp at Ironhack Lisbon, during a dystopian week of social isolation in March 2020. I worked in Python and all the <a href="https://github.com/aariops/final-project" target="_blank">code is available on GitHub</a>. <i>Feedback is very welcome!</i></p>
 <p>Some major inspiration for this work came from the following articles:</p>
 		<ul>
 			<li>The Pudding's feature <a href="https://pudding.cool/projects/vocabulary/" target="_blank">"The Largest Vocabulary In Hip-Hop"</a> - an exploration of the lyrical richness of a wide variety of rappers</li>
