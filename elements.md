@@ -48,34 +48,97 @@ nav-menu: true
 
 <div class="row">
 <div class="6u 12u$(small)">
-		<h4>Top 10 Artists Average Word Count</h4>
-		<ol>
-    <li>Kate Tempest - 2393.33</li>
-    <li>Megan Thee Stallion	- 2303.36</li>
-    <li>Little Simz	- 2225.39</li>
-    <li>Missy Elliott	- 2052.59</li>
-    <li>Spice Girls	- 2046</li>
-    <li>Ciara	- 2044.75</li>
-    <li>Iggy Azalea	- 2041.66</li>
-    <li>Destiny’s Child -	2028.39</li>
-    <li>Jennifer Lopez - 2017.89</li>
-    <li>The Pussycat Dolls - 2002.25</li>
-	</ol>
+		<h4>Top 10 Artists Word Count</h4>
+    <p><i><b>(average, ascending)</b></i></p>
+	  	<div class="table-wrapper">
+	<table>
+		<thead>
+			<tr>
+				<th>Artist</th>
+				<th>Word Count per Song</th>
+			</tr>
+		</thead>
+		<tbody>
+    <tr>
+    <td>Kate Tempest</td><td>2393.33</td>
+    </tr>
+    <tr>
+    <td>Megan Thee Stallion</td><td>2303.36</td>
+    </tr>
+    <tr>
+    <td>Little Simz</td><td>2225.39</td>
+    </tr>
+    <tr>
+    <td>Missy Elliott</td><td>2052.59</td>
+    </tr>
+    <tr>
+    <td>Spice Girls</td><td>2046</td>
+    </tr>
+    <tr>
+    <td>Ciara</td><td>2044.75</td>
+    </tr>
+    <tr>
+    <td>Iggy Azalea</td><td>2041.66</td>
+    </tr>
+    <tr>
+    <td>Destiny’s Child -	2028.39</td>
+    </tr>
+    <tr>
+    <td>Jennifer Lopez</td><td>2017.89</td>
+    </tr>
+    <tr>
+    <td>The Pussycat Dolls</td><td>2002.25</td>
+    </tr>
+	</tbody>
+	</table>
+  </div>
 	</div>
 	<div class="6u$ 12u$(small)">
-		<h4>Bottom 10 Artists Average Word Count</h4>
-		<ol>
-		<li>Billie Holiday - 571.68</li>
-    <li>Crystal Castles - 610.88</li>
-    <li>Portishead - 630.52</li>
-    <li>Anna Calvi - 667.02</li>
-    <li>Sarah Vaughan - 671.95</li>
-    <li>Dinah Washington - 681.87</li>
-    <li>Nadine Shah	- 690.78</li>
-    <li>Goldfrapp - 694.44</li>
-    <li>Diana Krall	- 706.35</li>
-    <li>PJ Harvey	- 715.87</li>
-	</ol>
+		<h4>Bottom 10 Artists Word Count</h4>
+    <p><i><b>(average, descending)</b></i></p>
+	  	<div class="table-wrapper">
+	<table>
+		<thead>
+			<tr>
+				<th>Artist</th>
+				<th>Word Count per Song</th>
+			</tr>
+		</thead>
+		<tbody>
+		<tr>
+    <td>Billie Holiday</td><td>571.68</td>
+    </tr>
+    <tr>
+    <td>Crystal Castles</td><td>610.88</td>
+    </tr>
+    <tr>
+    <td>Portishead</td><td>630.52</td>
+    </tr>
+    <tr>
+    <td>Anna Calvi</td><td>667.02</td>
+    </tr>
+    <tr>
+    <td>Sarah Vaughan</td><td>671.95</td>
+    </tr>
+    <tr>
+    <td>Dinah Washington</td><td>681.87</td>
+    </tr>
+    <tr>
+    <td>Nadine Shah</td><td>690.78</td>
+    </tr>
+    <tr>
+    <td>Goldfrapp</td><td>694.44</td>
+    </tr>
+    <tr>
+    <td>Diana Krall</td><td>706.35</td>
+    </tr>
+    <tr>
+    <td>PJ Harvey</td><td>715.87</td>
+    </tr>
+
+</tbody>
+	</table>
+  </div>
 	</div>
 </div>
 
@@ -96,7 +159,7 @@ nav-menu: true
 		<thead>
 			<tr>
 				<th>Artist</th>
-				<th>Word/Song Ratio</th>
+				<th>Unique Words</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -142,7 +205,7 @@ nav-menu: true
 		<thead>
 			<tr>
 				<th>Artist</th>
-				<th>Word/Song Ratio</th>
+				<th>Unique Words</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -186,6 +249,7 @@ nav-menu: true
 <p>You can explore these results on the plot below. <b>The furthest to the right, the highest the ratio of unique words per song. The widest (and closer to a yellow shade) the dot is, the biggest the word count.</b></p>
 
 <div class="flourish-embed flourish-scatter" data-src="visualisation/1732863"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
 
 <div class="row">
 <div class="6u 12u$(small)">
@@ -241,6 +305,7 @@ nav-menu: true
           <td>44.53</td>
       </tr>
 	</div>
+  </div>
 	<div class="6u$ 12u$(small)">
 		<h4>Bottom 10 Artists Unique Words per Song</h4>
     <p><i><b>(ratio, ascending)</b></i></p>
@@ -297,8 +362,7 @@ nav-menu: true
 		</table>
 </div>
 </div>
-
-
+</div>
 
 <hr class="major" />
 
